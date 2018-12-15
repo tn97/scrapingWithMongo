@@ -22,7 +22,7 @@ mongoose
 // setting up the favicon middleware
 app.use(favicon(path.join(__dirname, 'public', 'assets/img/favicon.ico')));
 
-// seting up Morgan middleware
+// setting up Morgan middleware
 app.use(logger('dev'));
 
 // setting up body parser middleware
