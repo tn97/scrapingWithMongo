@@ -2,7 +2,7 @@ const express = require("express"),
       mongoose = require("mongoose"),
       exphbs = require("express-handlebars"),
       bodyParser = require("body-parser"),
-      logger = require("morgan"),
+      // logger = require("morgan"),
       path = require("path"),
       favicon = require("serve-favicon");
 
@@ -23,7 +23,7 @@ mongoose
 app.use(favicon(path.join(__dirname, 'public', 'assets/img/favicon.ico')));
 
 // setting up Morgan middleware
-app.use(logger('dev'));
+// app.use(logger('dev'));
 
 // setting up body parser middleware
 app.use(bodyParser.json());
